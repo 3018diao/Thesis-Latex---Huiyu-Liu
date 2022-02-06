@@ -1,0 +1,46 @@
+%%%%%%%%%%%%%%%%%%%
+% weitere Einstellungen
+%%%%%%%%%%%%%%%%%%%
+\ifthenelse{\equal{\languagename}{english}}{
+    \setupReviewName*{Reviewer,Supervisor}
+    \newcommand{\la}[3]{[Last accessed \DTMdisplaydate{#1}{#2}{#3}{-1}]}
+}{
+    \setupReviewName*{Gutachter,Betreuer}
+    \newcommand{\la}[3]{[Letzter Zugriff \DTMdisplaydate{#1}{#2}{#3}{-1}]}
+}
+
+%%%%%%%%%%%%%%%%%%%
+% vordefinierte Zeichen(folgen)
+%%%%%%%%%%%%%%%%%%%
+\newcommand*{\FeatureTrue}{\ding{51}}
+\newcommand*{\FeatureFalse}{\ding{55}}
+\newcommand*{\FeatureNone}{\,\,-\,\,}
+
+\newcommand{\ie}{i.\,e.}
+\newcommand{\Ie}{I.\,e.}
+\newcommand{\eg}{e.\,g.}
+\newcommand{\Eg}{E.\,g.} 
+\newcommand{\ia}{i.\,a.}
+\newcommand{\etal}{et al.} 
+
+%%%%%%%%%%%%%%%%%%%
+% vordefinierte weitere Makros
+%%%%%%%%%%%%%%%%%%%
+\newboolean{final}
+\setboolean{final}{false} % set false for removing comments
+
+\ifthenelse{\boolean{final}}{
+    \newcommand{\hint}[1]{}
+	\newcommand{\Add}[1]{#1}
+	\newcommand{\Delete}[1]{}
+	\newcommand{\Rewrite}[1]{#1}
+    \newcommand{\Feedback}[1]{#1}
+	\newcommand{\tocite}[1]{}
+}{
+    \newcommand{\hint}[1]{\textcolor{teal}{	\begin{framed} \noindent \underline{Hint:} \medskip \newline #1 \end{framed}}}
+    \newcommand{\Add}[1]{{\color{red!80!black}#1}}
+	\newcommand{\Delete}[1]{{\color{gray!50}#1}}
+    \newcommand{\Rewrite}[1]{{\color{orange!80!black}#1}}
+    \newcommand{\Feedback}[1]{{\color{blue!80!black}#1}}
+  	\newcommand{\tocite}[1]{{\color{red!80!black}[TOCITE: #1]}}
+}

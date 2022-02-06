@@ -1,0 +1,184 @@
+%% This file is based on https://github.com/tudace/tuda_latex_templates by Marei Peischl <marei@peitex.de>
+%%
+% !TeX program = lualatex
+%%
+
+\documentclass[
+	language=english, % Zu ngerman ändern bei deutschen Arbeiten
+	thesis={type=bsc}, % Type ändern auf ... sta: Studienarbeit, bsc: Bachelor, msc: Master
+%% Die folgenden Parameter sollten nicht geändert werden
+	class=report,% Basisdokumentenklasse. Wählt die Korrespondierende KOMA-Script Klasse
+	ruledheaders=section,% Ebene bis zu der die Überschriften mit Linien abgetrennt werden, vgl. DEMO-TUDaPub
+	accentcolor=1b,% Auswahl der Akzentfarbe
+	marginpar=false,% Kopfzeile und Fußzeile erstrecken sich nicht über die Randnotizspalte
+	parskip=half-,% Absatzkennzeichnung durch Abstand vgl. KOMA-Script
+	fontsize=11pt,% Basisschriftgröße laut Corporate Design ist mit 9pt häufig zu klein
+	IMRAD=false, % Zusätzliche Metadaten nach Wunsch der Universitätsbibliothek deaktivieren
+% 	pdfa=false % tudapub hat einen Workaround für pdfa compilation https://github.com/tudace/tuda_latex_templates/issues/321 Falls kein pdfa notwendig ist: pdfa=false nutzen und das \Metadata Command im Document head entfernen
+]{tudapub}
+
+%%%%%%%%%%%%%%%%%%%
+% Sprachanpassung & Verbesserte Trennregeln
+%%%%%%%%%%%%%%%%%%%
+\usepackage[ngerman, main=english]{babel} % ngerman und englisch bei deutschen Arbeiten tauschen
+\usepackage[english]{datetime2} % german und english bei der Arbeit anpassen
+\usepackage[autostyle]{csquotes} % Anführungszeichen vereinfacht
+\usepackage{microtype}
+\usepackage{graphicx}
+
+
+%%%%%%%%%%%%%%%%%%%
+% Literaturverzeichnis
+%%%%%%%%%%%%%%%%%%%
+\usepackage[
+    backend=biber,
+    bibencoding=utf-8,
+    language=auto,
+    sorting=nyt,
+    defernumbers=true,
+    style=ieee,
+    maxbibnames=100,
+    mincitenames=1,
+    maxcitenames=2,
+  ]{biblatex} % Literaturverzeichnis
+\bibliography{bibliography}
+
+%%%%%%%%%%%%%%%%%%%
+% Abkürzungen (Akronym Referenzen durch \ac{SG} oder \acp{SG} für Singular oder Plural Formen
+%%%%%%%%%%%%%%%%%%%
+\usepackage{acro}
+\usepackage{mfirstuc}% provides \capitalisewords
+\usepackage{booktabs}
+\acsetup{list/template=longtable}
+\input{acronyms}
+
+
+%%%%%%%%%%%%%%%%%%%
+% Paketvorschläge Tabellen
+%%%%%%%%%%%%%%%%%%%
+%\usepackage{array}     % Basispaket für Tabellenkonfiguration, wird von den folgenden automatisch geladen
+\usepackage{tabularx}   % Tabellen, die sich automatisch der Breite anpassen
+\usepackage{longtable} % Mehrseitige Tabellen
+%\usepackage{xltabular} % Mehrseitige Tabellen mit anpassarer Breite
+\usepackage{booktabs}   % Verbesserte Möglichkeiten für Tabellenlayout über horizontale Linien
+\usepackage{minted}
+
+%%%%%%%%%%%%%%%%%%%
+% Paketvorschläge Mathematik
+%%%%%%%%%%%%%%%%%%%
+%\usepackage{mathtools} % erweiterte Fassung von amsmath
+%\usepackage{amssymb}   % erweiterter Zeichensatz
+%\usepackage{siunitx}   % Einheiten
+
+%%%%%%%%%%%%%%%%%%%
+% Weitere Paketvorschläge
+%%%%%%%%%%%%%%%%%%%
+\usepackage{pifont}% Zapf-Dingbats Symbole
+\usepackage{subcaption}
+\usepackage{framed}
+
+\usepackage[T1]{fontenc}
+\usepackage{beramono}
+\usepackage{listings}
+\usepackage{xcolor}
+\usepackage{floatrow}
+\usepackage{blindtext}
+\usepackage{multirow}
+\usepackage{enumitem}
+\usepackage{tikz}
+\usetikzlibrary{matrix,positioning}
+
+\usepackage[autostyle]{csquotes}  
+
+\lstset{
+  language=XML,
+  morekeywords={encoding,
+    xs:schema,xs:element,xs:complexType,xs:sequence,xs:attribute}
+}
+\definecolor{dkgreen}{rgb}{0,0.6,0}
+\definecolor{gray}{rgb}{0.5,0.5,0.5}
+\definecolor{mauve}{rgb}{0.58,0,0.82}
+\definecolor{LightGray}{gray}{0.9}
+
+\lstdefinestyle{myScalastyle}{
+  frame=tb,
+  language=scala,
+  aboveskip=3mm,
+  belowskip=3mm,
+  showstringspaces=false,
+  columns=flexible,
+  basicstyle={\small\ttfamily},
+  numbers=none,
+  numberstyle=\tiny\color{gray},
+  keywordstyle=\color{blue},
+  commentstyle=\color{dkgreen},
+  stringstyle=\color{mauve},
+  frame=single,
+  breaklines=true,
+  breakatwhitespace=true,
+  tabsize=3,
+}
+
+\input{macros}
+
+\begin{document}
+
+\title{aaaa}
+\subtitle{Subtitle}
+\author[F. Surname]{Huiyu Liu} % optionales Argument ist die Signatur
+\reviewer{Dr.-Ing. (habil.) Stefan Göbel \and Supervisor} % Gutachter
+\department{etit}
+\institute{Serious Games}
+
+\Metadata{
+    author=Forename Surname,
+    title=Title,
+}
+
+\submissiondate{\today}
+\examdate{\today}
+
+% Hinweis zur Lizenz:
+% TUDa-CI verwendet momentan die Lizenz CC BY-NC-ND 2.0 DE als Voreinstellung.
+% Die TU Darmstadt hat jedoch die Empfehlung von dieser auf die liberalere
+% CC BY 4.0 geändert. Diese erlaubt eine Verwendung bearbeiteter Versionen und
+% die kommerzielle Nutzung.
+% TUDa-CI wird im nächsten größeren Release ebenfalls diese Anpassung vornehmen.
+% Aus diesem Grund wird empfohlen die Lizenz manuell auszuwählen.
+% \tuprints{urn=1234,printid=12345,doi=10.25534/tuprints-1234,license=cc-by-4.0}
+% To see furhter information on the license option in English, remove the license= key and pay attention to the warning & help message.
+
+% \maketitle
+
+% \affidavit[digital] % oder \affidavit[digital] falls eine rein digitale Abgabe vorgesehen ist.
+% \input{titlepage}
+% \thispagestyle{empty}
+\pagenumbering{Roman}
+\input{affidavit}
+\newpage
+\input{acknowledgments}
+\input{abstract}
+\tableofcontents
+% \thispagestyle{empty}
+\newpage
+\setcounter{page}{1}
+
+\pagenumbering{arabic}
+%%%%%%%%%%%%%%%%%%%
+% Content
+%%%%%%%%%%%%%%%%%%%
+\input{content}
+
+
+\clearpage
+\chapter*{List of Acronyms}
+
+
+\printacronyms[heading={none}]
+
+\printbibliography
+
+\appendix
+\input{appendix}
+
+\end{document}

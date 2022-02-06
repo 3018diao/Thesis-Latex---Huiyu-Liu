@@ -1,0 +1,721 @@
+@article{caserman2020quality,
+    author = {Caserman, Polona and Hoffmann, Katrin and M{\"u}ller, Philipp and Schaub, Marcel and Straßburg, Katharina and Wiemeyer, Josef and Bruder, Regina and G{\"o}bel, Stefan},
+    year = {2020},
+    month = {04},
+    pages = {},
+    title = {{Quality Criteria for Serious Games: Serious Part, Game Part, and Balance}},
+    volume = {8},
+    number = {3},
+    journal = {JMIR Serious Games},
+    doi = {10.2196/19037}
+}
+
+@article{tregel2021looking,
+    title={{Looking for Charizard: applying the orienteering problem to location-based games}},
+    author={Tregel, Thomas and M{\"u}ller, Philipp Niklas and G{\"o}bel, Stefan and Steinmetz, Ralf},
+    journal={The Visual Computer},
+    volume={37},
+    number={1},
+    pages={31--45},
+    year={2021},
+    publisher={Springer},
+    doi = {10.1007/s00371-019-01737-z}
+}
+
+@inproceedings{achenbach2021rock,
+    title={{Rock beats Scissor: SVM based gesture recognition with data gloves}},
+    author={Achenbach, Philipp and M{\"u}ller, Philipp Niklas and Wach, Tobias Alexander and Tregel, Thomas and G{\"o}bel, Stefan},
+    booktitle={2021 IEEE International Conference on Pervasive Computing and Communications Workshops and other Affiliated Events (PerCom Workshops)},
+    pages={617--622},
+    year={2021},
+    organization={IEEE}
+}
+
+@misc{PokemonGO,
+    key          = {Pok{\'e}mon GO},
+    title        = {{Pok{\'e}mon GO}},
+    howpublished = {{The Pok{\'e}mon Company, Nintendo. Niantic, Inc.}},
+    year         = {2016},
+    note         = {Android, iOS}
+}
+
+@INPROCEEDINGS{6625441,
+  author={Li, Yishan and Manoharan, Sathiamoorthy},
+  booktitle={2013 IEEE Pacific Rim Conference on Communications, Computers and Signal Processing (PACRIM)}, 
+  title={A performance comparison of SQL and NoSQL databases}, 
+  year={2013},
+  volume={},
+  number={},
+  pages={15-19},
+  doi={10.1109/PACRIM.2013.6625441}
+}
+
+@InProceedings{6558077,
+  author    = {Kala Karun, A. and Chitharanjan, K.},
+  booktitle = {2013 IEEE Conference on Information Communication Technologies},
+  title     = {A review on hadoop — HDFS infrastructure extensions},
+  year      = {2013},
+  month     = {April},
+  pages     = {132-137},
+  abstract  = {Apache's Hadoop<sup>1</sup> as of now is pretty good but there are scopes of extensions and enhancements. A large number of improvements are proposed to Hadoop which is an open source implementation of Google's Map/Reduce framework. It enables distributed, data intensive and parallel applications by decomposing a massive job into smaller tasks and a massive data set into smaller partitions such that each task processes a different partition in parallel. Hadoop uses Hadoop distributed File System (HDFS) which is an open source implementation of the Google File System (GFS) for storing data. Map/Reduce application mainly uses HDFS for storing data. HDFS is a very large distributed file system that uses commodity hardware and provides high throughput as well as fault tolerance. Many big enterprises believe that within a few years more than half of the world's data will be stored in Hadoop. HDFS stores files as a series of blocks and are replicated for fault tolerance. Strategic data partitioning, processing, layouts, replication and placement of data blocks will increase the performance of Hadoop and a lot of research is going on in this area. This paper reviews some of the major enhancements suggested to Hadoop especially in data storage, processing and placement.},
+  doi       = {10.1109/CICT.2013.6558077},
+}
+
+@InProceedings{10.1145/2723372.2742797,
+  author    = {Armbrust, Michael and Xin, Reynold S. and Lian, Cheng and Huai, Yin and Liu, Davies and Bradley, Joseph K. and Meng, Xiangrui and Kaftan, Tomer and Franklin, Michael J. and Ghodsi, Ali and Zaharia, Matei},
+  booktitle = {Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data},
+  title     = {Spark SQL: Relational Data Processing in Spark},
+  year      = {2015},
+  address   = {New York, NY, USA},
+  pages     = {1383–1394},
+  publisher = {Association for Computing Machinery},
+  series    = {SIGMOD '15},
+  abstract  = {Spark SQL is a new module in Apache Spark that integrates relational processing with Spark's functional programming API. Built on our experience with Shark, Spark SQL lets Spark programmers leverage the benefits of relational processing (e.g. declarative queries and optimized storage), and lets SQL users call complex analytics libraries in Spark (e.g. machine learning). Compared to previous systems, Spark SQL makes two main additions. First, it offers much tighter integration between relational and procedural processing, through a declarative DataFrame API that integrates with procedural Spark code. Second, it includes a highly extensible optimizer, Catalyst, built using features of the Scala programming language, that makes it easy to add composable rules, control code generation, and define extension points. Using Catalyst, we have built a variety of features (e.g. schema inference for JSON, machine learning types, and query federation to external databases) tailored for the complex needs of modern data analysis. We see Spark SQL as an evolution of both SQL-on-Spark and of Spark itself, offering richer APIs and optimizations while keeping the benefits of the Spark programming model.},
+  doi       = {10.1145/2723372.2742797},
+  isbn      = {9781450327589},
+  keywords  = {databases, hadoop, data warehouse, machine learning, spark},
+  location  = {Melbourne, Victoria, Australia},
+  numpages  = {12},
+  url       = {https://doi.org/10.1145/2723372.2742797},
+}
+
+@InProceedings{10.5555/1863103.1863113,
+  author    = {Zaharia, Matei and Chowdhury, Mosharaf and Franklin, Michael J. and Shenker, Scott and Stoica, Ion},
+  booktitle = {Proceedings of the 2nd USENIX Conference on Hot Topics in Cloud Computing},
+  title     = {Spark: Cluster Computing with Working Sets},
+  year      = {2010},
+  address   = {USA},
+  pages     = {10},
+  publisher = {USENIX Association},
+  series    = {HotCloud'10},
+  abstract  = {MapReduce and its variants have been highly successful in implementing large-scale data-intensive applications on commodity clusters. However, most of these systems are built around an acyclic data flow model that is not suitable for other popular applications. This paper focuses on one such class of applications: those that reuse a working set of data across multiple parallel operations. This includes many iterative machine learning algorithms, as well as interactive data analysis tools. We propose a new framework called Spark that supports these applications while retaining the scalability and fault tolerance of MapReduce. To achieve these goals, Spark introduces an abstraction called resilient distributed datasets (RDDs). An RDD is a read-only collection of objects partitioned across a set of machines that can be rebuilt if a partition is lost. Spark can outperform Hadoop by 10x in iterative machine learning jobs, and can be used to interactively query a 39 GB dataset with sub-second response time.},
+  location  = {Boston, MA},
+  numpages  = {1},
+}
+
+@Article{7933954,
+  author   = {Tahmassebpour, Mahmoudreza},
+  journal  = {IEEE Access},
+  title    = {A New Method for Time-Series Big Data Effective Storage},
+  year     = {2017},
+  issn     = {2169-3536},
+  pages    = {10694-10699},
+  volume   = {5},
+  abstract = {Today, one of the main challenges of big data research is the processing of big time-series data. Moreover, time data analysis is of considerable importance, because previous trends are useful for predicting the future. Due to the considerable delay when the volume of the data increases, the presence of redundancy, and the innate lack of time-series structures, the traditional relational data model does not seem to be adequately able to analyze time data. Moreover, many traditional data structures do not support time operators, which results in an inefficient access to time data. Therefore, relational database management systems have difficulty in dealing with big data-it may require massively parallel software that runs on many servers. This has led us to implement Chronos Software, an in-memory background-based time database for key-value pairs; this software was implemented using C++ language. An independent design has been suggested through appropriately using temporal algorithms, parallelism algorithms, and methods of data storage in RAM. Our results indicate that the employment of RAM for storing the data and of the Timeline Index algorithm for getting access to the time background of the keys in Chronos translate into an increase of about 40%-90% in the efficiency as compared with other databases, such as MySQL and MongoDB.},
+  doi      = {10.1109/ACCESS.2017.2708080},
+}
+
+@Article{7600359,
+  author   = {Cai, Hongming and Xu, Boyi and Jiang, Lihong and Vasilakos, Athanasios V.},
+  journal  = {IEEE Internet of Things Journal},
+  title    = {IoT-Based Big Data Storage Systems in Cloud Computing: Perspectives and Challenges},
+  year     = {2017},
+  issn     = {2327-4662},
+  month    = {Feb},
+  number   = {1},
+  pages    = {75-87},
+  volume   = {4},
+  abstract = {Internet of Things (IoT) related applications have emerged as an important field for both engineers and researchers, reflecting the magnitude and impact of data-related problems to be solved in contemporary business organizations especially in cloud computing. This paper first provides a functional framework that identifies the acquisition, management, processing and mining areas of IoT big data, and several associated technical modules are defined and described in terms of their key characteristics and capabilities. Then current research in IoT application is analyzed, moreover, the challenges and opportunities associated with IoT big data research are identified. We also report a study of critical IoT application publications and research topics based on related academic and industry publications. Finally, some open issues and some typical examples are given under the proposed IoT-related research framework.},
+  doi      = {10.1109/JIOT.2016.2619369},
+}
+
+@Article{8959108,
+  author   = {Wang, Fang and Li, Menggang and Mei, Yiduo and Li, Wenrui},
+  journal  = {IEEE Access},
+  title    = {Time Series Data Mining: A Case Study With Big Data Analytics Approach},
+  year     = {2020},
+  issn     = {2169-3536},
+  pages    = {14322-14328},
+  volume   = {8},
+  abstract = {Time series data is common in data sets has become one of the focuses of current research. The prediction of time series can be realized through the mining of time series data, so that we can obtain the development process and regularity of social economic phenomena reflected by time series, and extrapolate to predict its development trend. More and more attention has been paid to time series prediction in the era of big data. It is the basic application of time series prediction to accurately predict the trend. In this paper, we introduce various time series autoregressive (AR) model, moving average (MA) model, and ARIMA model that is combined by AR and MA. As the time series prediction in general scenarios, the ARIMA is applied to the risk prediction of the National SME Stock Trading (New Third Board) in combination with specific scenarios. The case studies show that the results of our analysis are basically consistent with the actual situation, which has greatly helped the prediction of financial risks.},
+  doi      = {10.1109/ACCESS.2020.2966553},
+}
+
+@Article{7888916,
+  author   = {Marjani, Mohsen and Nasaruddin, Fariza and Gani, Abdullah and Karim, Ahmad and Hashem, Ibrahim Abaker Targio and Siddiqa, Aisha and Yaqoob, Ibrar},
+  journal  = {IEEE Access},
+  title    = {Big IoT Data Analytics: Architecture, Opportunities, and Open Research Challenges},
+  year     = {2017},
+  issn     = {2169-3536},
+  pages    = {5247-5261},
+  volume   = {5},
+  abstract = {Voluminous amounts of data have been produced, since the past decade as the miniaturization of Internet of things (IoT) devices increases. However, such data are not useful without analytic power. Numerous big data, IoT, and analytics solutions have enabled people to obtain valuable insight into large data generated by IoT devices. However, these solutions are still in their infancy, and the domain lacks a comprehensive survey. This paper investigates the state-of-the-art research efforts directed toward big IoT data analytics. The relationship between big data analytics and IoT is explained. Moreover, this paper adds value by proposing a new architecture for big IoT data analytics. Furthermore, big IoT data analytic types, methods, and technologies for big data mining are discussed. Numerous notable use cases are also presented. Several opportunities brought by data analytics in IoT paradigm are then discussed. Finally, open research challenges, such as privacy, big data mining, visualization, and integration, are presented as future research directions.},
+  doi      = {10.1109/ACCESS.2017.2689040},
+}
+
+@InProceedings{inproceedings,
+  author = {Joshi, and Svb, Dr},
+  title  = {CAN, FlexRay, MOST versus Ethernet for vehicular networks},
+  year   = {2018},
+  month  = {04},
+}
+
+@InProceedings{7993938,
+  author    = {Nkenyereye, Lionel and Jang, Jong-Wook},
+  booktitle = {2017 Ninth International Conference on Ubiquitous and Future Networks (ICUFN)},
+  title     = {Integration of big data for querying CAN bus data from connected car},
+  year      = {2017},
+  month     = {July},
+  pages     = {946-950},
+  abstract  = {Data transmission by Connected Car via wireless communications technologies enable new in-car telematics services. The capability to efficiently process large volume of Controller Area Network (CAN) bus data within a reasonable time. Since these data are essential for many Connected Car applications, querying and extracting useful information using Hadoop framework will allow to enhance safety and driving experience. This paper studies design steps to take in consideration when implementing MapReduce patterns to analyses CAN bus data in order to produce useful data that are hosted in the cloud. In addition, we implement a mobile apps for collecting and transferring CAN bus data to remote data center which include application server and Hadoop ecosystem such Hive data warehouse. Experiment results show that MapReduce join algorithm is highly scalable and optimized for distributed computing than Statistical Analysis System (SAS) framework and HiveQL declarative language.},
+  doi       = {10.1109/ICUFN.2017.7993938},
+  issn      = {2165-8536},
+}
+
+@Misc{hadoop,
+  title   = {HDFS architecture guide},
+  journal = {Hadoop},
+  url     = {https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html},
+}
+
+@Misc{hadoop_file_system,
+  title   = {What is HDFS, the Hadoop File System},
+  journal = {Quobyte},
+  url     = {https://www.quobyte.com/storage-explained/what-is-hdfs},
+}
+
+@Misc{structured_data,
+  title     = {Structured vs Unstructured Data – What's the Difference?},
+  publisher = {G2},
+  url       = {https://www.g2.com/articles/structured-vs-unstructured-data},
+}
+
+@Misc{mariadb,
+  title   = {innodb\_flush\_log\_at\_trx\_commit},
+  journal = {MariaDB},
+  url     = {https://mariadb.com/docs/reference/mdb/system-variables/innodb_flush_log_at_trx_commit/},
+}
+
+@Misc{mariadb_autoextend,
+  title   = {innodb\_autoextend\_increment},
+  journal = {MariaDB},
+  url     = {https://mariadb.com/docs/reference/mdb/system-variables/innodb_autoextend_increment/},
+}
+
+@Misc{mariadb_log_file_size,
+  title   = {innodb\_log\_file\_size},
+  journal = {MariaDB},
+  url     = {https://mariadb.com/docs/reference/mdb/system-variables/innodb_log_file_size/},
+}
+
+@Misc{clickhouse_jdbc,
+  title   = {clickhouse native JDBC},
+  journal = {ClickHouse Native JDBC},
+  url     = {https://housepower.github.io/ClickHouse-Native-JDBC/guide/introduction.html},
+}
+
+@Article{10.1007/s002360050048,
+  author     = {O'Neil, Patrick and Cheng, Edward and Gawlick, Dieter and O'Neil, Elizabeth},
+  journal    = {Acta Inf.},
+  title      = {The Log-Structured Merge-Tree (LSM-Tree)},
+  year       = {1996},
+  issn       = {0001-5903},
+  month      = {jun},
+  number     = {4},
+  pages      = {351–385},
+  volume     = {33},
+  address    = {Berlin, Heidelberg},
+  doi        = {10.1007/s002360050048},
+  issue_date = {1996},
+  numpages   = {35},
+  publisher  = {Springer-Verlag},
+  url        = {https://doi.org/10.1007/s002360050048},
+}
+
+@Misc{lsm_tree,
+  title   = {LSM Tree},
+  journal = {LSM tree - Karthi softek},
+  url     = {https://blog.karthisoftek.com/a?ID=00700-6513ca69-52f3-49b5-adb5-b78fd1abe787},
+}
+
+@Misc{b_plus,
+  title   = {B+ Tree},
+  journal = {www.javatpoint.com},
+  url     = {https://www.javatpoint.com/b-plus-tree},
+}
+
+@Misc{johnny_2016,
+  author  = {Johnny},
+  month   = {Mar},
+  title   = {Data Structure - B+ Tree},
+  year    = {2016},
+  journal = {jojozhuang.github.io},
+  url     = {https://jojozhuang.github.io/algorithm/data-structure-b-plus-tree/},
+}
+
+@Misc{walker_2021,
+  author  = {Walker, Alyssa},
+  month   = {Dec},
+  title   = {B+ Tree : Search, insert and delete operations example},
+  year    = {2021},
+  journal = {Guru99},
+  url     = {https://www.guru99.com/introduction-b-plus-tree.html},
+}
+
+@Misc{kvaser_2021,
+  month   = {Nov},
+  title   = {An introduction to J1939 and DBC files},
+  year    = {2021},
+  journal = {Kvaser},
+  url     = {https://www.kvaser.com/developer-blog/an-introduction-j1939-and-dbc-files/},
+}
+
+@Misc{binary_file_data_spark,
+  title   = {Binary file of Spark},
+  journal = {Binary File Data Source - Spark 3.2.0 Documentation},
+  url     = {https://spark.apache.org/docs/latest/sql-data-sources-binaryFile.html},
+}
+
+@Misc{zd_datalogger,
+  title   = {ZD datalogger},
+  journal = {ZD Automotive - ZD Datalogger},
+  url     = {https://www.zd-automotive.de/zddatenlogger.php},
+}
+
+@Article{connected_and_Intelligent_Vehicles,
+  author  = {Yin R. and Chen B and Kong X},
+  journal = {Automotive Digest (Chinese)},
+  title   = {Research and Application on Ethernet Technologies for Connected and Intelligent Vehicles},
+  year    = {2019},
+  number  = {11},
+  pages   = {5},
+}
+
+@Misc{peterson_2021,
+  author  = {Peterson, Richard},
+  month   = {Dec},
+  title   = {Transaction management in DBMS: What are acid properties?},
+  year    = {2021},
+  journal = {Guru99},
+  url     = {https://www.guru99.com/dbms-transaction-management.html},
+}
+
+@Misc{menegasso_2018,
+  author    = {MENEGASSO, ANDRE EDUARDO.},
+  title     = {NOSQL},
+  year      = {2018},
+  journal   = {Amazon},
+  publisher = {NOVAS EDICOES ACADEMICAS},
+  url       = {https://aws.amazon.com/nosql/?nc1=h_ls},
+}
+
+@Misc{ibm_oltp,
+  author  = {By: IBM Cloud Education},
+  title   = {What is OLTP?},
+  journal = {IBM},
+  url     = {https://www.ibm.com/cloud/learn/oltp},
+}
+
+@Misc{birost,
+  title   = {Introduction and comparison of OLAP and OLTP},
+  journal = {Birost},
+  url     = {https://blog.birost.com/a?ID=00700-8bc8acfb-b54e-4a9b-addf-edb4d5ffd2e2},
+}
+
+@Book{kleppmann2017designing,
+  author    = {Kleppmann, M.},
+  publisher = {O'Reilly Media},
+  title     = {Designing Data-Intensive Applications: The Big Ideas Behind Reliable, Scalable, and Maintainable Systems},
+  year      = {2017},
+  isbn      = {9781491903117},
+  lccn      = {2017471021},
+  url       = {https://books.google.de/books?id=zFheDgAAQBAJ},
+}
+
+@Misc{wiki:Column_family,
+  author       = {Wikipedia},
+  howpublished = {\url{http://en.wikipedia.org/w/index.php?title=Column\%20family&oldid=1020229745}},
+  note         = {[Online; accessed 10-January-2022]},
+  title        = {{Column family} --- {W}ikipedia{,} The Free Encyclopedia},
+  year         = {2022},
+}
+
+@Misc{lockerman_2022,
+  author    = {Lockerman, Joshua},
+  month     = {Jan},
+  title     = {Time-series compression algorithms, explained},
+  year      = {2022},
+  journal   = {Timescale Blog},
+  publisher = {Timescale Blog},
+  url       = {https://blog.timescale.com/blog/time-series-compression-algorithms-explained/},
+}
+
+@Article{10.14778/2824032.2824078,
+  author     = {Pelkonen, Tuomas and Franklin, Scott and Teller, Justin and Cavallaro, Paul and Huang, Qi and Meza, Justin and Veeraraghavan, Kaushik},
+  journal    = {Proc. VLDB Endow.},
+  title      = {Gorilla: A Fast, Scalable, in-Memory Time Series Database},
+  year       = {2015},
+  issn       = {2150-8097},
+  month      = {aug},
+  number     = {12},
+  pages      = {1816–1827},
+  volume     = {8},
+  abstract   = {Large-scale internet services aim to remain highly available and responsive in the presence of unexpected failures. Providing this service often requires monitoring and analyzing tens of millions of measurements per second across a large number of systems, and one particularly effective solution is to store and query such measurements in a time series database (TSDB).A key challenge in the design of TSDBs is how to strike the right balance between efficiency, scalability, and reliability. In this paper we introduce Gorilla, Facebook's in-memory TSDB. Our insight is that users of monitoring systems do not place much emphasis on individual data points but rather on aggregate analysis, and recent data points are of much higher value than older points to quickly detect and diagnose the root cause of an ongoing problem. Gorilla optimizes for remaining highly available for writes and reads, even in the face of failures, at the expense of possibly dropping small amounts of data on the write path. To improve query efficiency, we aggressively leverage compression techniques such as delta-of-delta timestamps and XOR'd floating point values to reduce Gorilla's storage footprint by 10x. This allows us to store Gorilla's data in memory, reducing query latency by 73x and improving query throughput by 14x when compared to a traditional database (HBase)-backed time series data. This performance improvement has unlocked new monitoring and debugging tools, such as time series correlation search and more dense visualization tools. Gorilla also gracefully handles failures from a single-node to entire regions with little to no operational overhead.},
+  doi        = {10.14778/2824032.2824078},
+  issue_date = {August 2015},
+  numpages   = {12},
+  publisher  = {VLDB Endowment},
+  url        = {https://doi.org/10.14778/2824032.2824078},
+}
+
+@Misc{alibaba_cloud_community,
+  title   = {ClickHouse kernel analysis – storage structure and query acceleration of mergetree},
+  journal = {Alibaba Cloud Community},
+  url     = {https://www.alibabacloud.com/blog/clickhouse-kernel-analysis-storage-structure-and-query-acceleration-of-mergetree_597727},
+}
+
+@Misc{clickhouse,
+  author    = {ClickHouse},
+  title     = {Architecture overview},
+  journal   = {ClickHouse Documentation},
+  publisher = {ClickHouse, Inc.},
+  url       = {https://clickhouse.com/docs/en/development/architecture/},
+}
+
+@Misc{alibaba_influxdb,
+  title   = {Analysis of the storage mechanism in influxdb},
+  journal = {Alibaba Cloud Community},
+  url     = {https://www.alibabacloud.com/blog/595166},
+}
+
+@Misc{influxdb_glossary,
+  title   = {InfluxDB glossary},
+  journal = {InfluxDB glossary | InfluxDB OSS 1.8 Documentation},
+  url     = {https://docs.influxdata.com/influxdb/v1.8/concepts/glossary/#tag},
+}
+
+@Misc{mysql,
+  title   = {MySQL 8.0 Reference Manual :: 1.2.1 what is mysql?},
+  journal = {MySQL},
+  url     = {https://dev.mysql.com/doc/refman/8.0/en/what-is-mysql.html},
+}
+
+@Misc{db,
+  title   = {Engines ranking},
+  journal = {DB},
+  url     = {https://db-engines.com/en/ranking},
+}
+
+@Misc{cassandra_wikipedia_2021,
+  month     = {Dec},
+  title     = {Apache Cassandra},
+  year      = {2021},
+  journal   = {Wikipedia},
+  publisher = {Wikimedia Foundation},
+  url       = {https://en.wikipedia.org/wiki/Apache_Cassandra},
+}
+
+@Misc{influxdb_features,
+  title   = {InfluxDB 1.8 documentation},
+  journal = {InfluxDB OSS 1.8 Documentation},
+  url     = {https://docs.influxdata.com/influxdb/v1.8/},
+}
+
+@Misc{clickhouse_feature,
+  author    = {ClickHouse},
+  title     = {Distinctive features of ClickHouse},
+  journal   = {ClickHouse Documentation},
+  publisher = {ClickHouse, Inc.},
+  url       = {https://clickhouse.com/docs/en/introduction/distinctive-features/},
+}
+
+@InProceedings{179858,
+  author    = {Tyler Harter and Dhruba Borthakur and Siying Dong and Amitanand Aiyer and Liyin Tang and Andrea C. Arpaci-Dusseau and Remzi H. Arpaci-Dusseau},
+  booktitle = {12th USENIX Conference on File and Storage Technologies (FAST 14)},
+  title     = {Analysis of {HDFS} Under {HBase}: A Facebook Messages Case Study},
+  year      = {2014},
+  address   = {Santa Clara, CA},
+  month     = feb,
+  pages     = {199--212},
+  publisher = {USENIX Association},
+  isbn      = {ISBN 978-1-931971-08-9},
+  url       = {https://www.usenix.org/conference/fast14/technical-sessions/presentation/harter},
+}
+
+@Misc{hadoop,
+  title   = {HDFS architecture guide},
+  journal = {Hadoop},
+  url     = {https://hadoop.apache.org/docs/r1.2.1/hdfs_design.html},
+}
+
+@Misc{HDFS_Architecture,
+  title   = {HDFS Architecture},
+  journal = {What is HDFS, the Hadoop File System?},
+  url     = {https://www.quobyte.com/storage-explained/what-is-hdfs},
+}
+
+@Misc{influxdb_cite,
+  title   = {Time Series Index (TSI) overview},
+  journal = {Time Series Index (TSI) overview | InfluxDB OSS 1.8 Documentation},
+  url     = {https://docs.influxdata.com/influxdb/v1.8/concepts/time-series-index/},
+}
+
+@Misc{influxdb_alibaba,
+  title   = {Analysis of the storage mechanism in influxdb},
+  journal = {Alibaba Cloud Community},
+  url     = {https://www.alibabacloud.com/blog/595166},
+}
+
+@Misc{taos_data,
+  title   = {Blog: Characteristics of IOT big data},
+  journal = {Taos Data},
+  url     = {https://www.taosdata.com/blog/2019/07/09/86.html},
+}
+
+@InProceedings{10.1145/2723372.2742797,
+  author    = {Armbrust, Michael and Xin, Reynold S. and Lian, Cheng and Huai, Yin and Liu, Davies and Bradley, Joseph K. and Meng, Xiangrui and Kaftan, Tomer and Franklin, Michael J. and Ghodsi, Ali and Zaharia, Matei},
+  booktitle = {Proceedings of the 2015 ACM SIGMOD International Conference on Management of Data},
+  title     = {Spark SQL: Relational Data Processing in Spark},
+  year      = {2015},
+  address   = {New York, NY, USA},
+  pages     = {1383–1394},
+  publisher = {Association for Computing Machinery},
+  series    = {SIGMOD '15},
+  abstract  = {Spark SQL is a new module in Apache Spark that integrates relational processing with Spark's functional programming API. Built on our experience with Shark, Spark SQL lets Spark programmers leverage the benefits of relational processing (e.g. declarative queries and optimized storage), and lets SQL users call complex analytics libraries in Spark (e.g. machine learning). Compared to previous systems, Spark SQL makes two main additions. First, it offers much tighter integration between relational and procedural processing, through a declarative DataFrame API that integrates with procedural Spark code. Second, it includes a highly extensible optimizer, Catalyst, built using features of the Scala programming language, that makes it easy to add composable rules, control code generation, and define extension points. Using Catalyst, we have built a variety of features (e.g. schema inference for JSON, machine learning types, and query federation to external databases) tailored for the complex needs of modern data analysis. We see Spark SQL as an evolution of both SQL-on-Spark and of Spark itself, offering richer APIs and optimizations while keeping the benefits of the Spark programming model.},
+  doi       = {10.1145/2723372.2742797},
+  isbn      = {9781450327589},
+  keywords  = {hadoop, spark, data warehouse, databases, machine learning},
+  location  = {Melbourne, Victoria, Australia},
+  numpages  = {12},
+  url       = {https://doi.org/10.1145/2723372.2742797},
+}
+
+@Article{spark2018apache,
+  author  = {Spark, Apache},
+  journal = {Retrieved January},
+  title   = {Apache spark},
+  year    = {2018},
+  pages   = {2018},
+  volume  = {17},
+}
+
+@InProceedings{6567202,
+  author    = {Sagiroglu, Seref and Sinanc, Duygu},
+  booktitle = {2013 International Conference on Collaboration Technologies and Systems (CTS)},
+  title     = {Big data: A review},
+  year      = {2013},
+  pages     = {42-47},
+  doi       = {10.1109/CTS.2013.6567202},
+}
+
+@Book{10.5555/2132803,
+  author    = {Zikopoulos, Paul and Eaton, Chris and IBM},
+  publisher = {McGraw-Hill Osborne Media},
+  title     = {Understanding Big Data: Analytics for Enterprise Class Hadoop and Streaming Data},
+  year      = {2011},
+  edition   = {1st},
+  isbn      = {0071790535},
+  abstract  = {Big Data represents a new era in data exploration and utilization, and IBM is uniquely positioned to help clients navigate this transformation. This book reveals how IBM is leveraging open source Big Data technology, infused with IBM technologies, to deliver a robust, secure, highly available, enterprise-class Big Data platform. The three defining characteristics of Big Data--volume, variety, and velocity--are discussed. You'll get a primer on Hadoop and how IBM is hardening it for the enterprise, and learn when to leverage IBM InfoSphere BigInsights (Big Data at rest) and IBM InfoSphere Streams (Big Data in motion) technologies. Industry use cases are also included in this practical guide. Learn how IBM hardens Hadoop for enterprise-class scalability and reliability Gain insight into IBM's unique in-motion and at-rest Big Data analytics platform Learn tips and tricks for Big Data use cases and solutions Get a quick Hadoop primer},
+}
+
+@Article{tole2013big,
+  author  = {Tole, Alexandru Adrian and others},
+  journal = {Database systems journal},
+  title   = {Big data challenges},
+  year    = {2013},
+  number  = {3},
+  pages   = {31--40},
+  volume  = {4},
+}
+
+@Misc{three_v,
+  title   = {Three V's of Big Data},
+  journal = {Blogs.oracle.com},
+  url     = {https://blogs.oracle.com/health-sciences/post/the-three-vx27s-of-big-data-volume-velocity-and-variety},
+}
+
+@InProceedings{4677544,
+  author    = {Renjun Li and Chu Liu and Feng Luo},
+  booktitle = {2008 IEEE Vehicle Power and Propulsion Conference},
+  title     = {A design for automotive CAN bus monitoring system},
+  year      = {2008},
+  pages     = {1-5},
+  doi       = {10.1109/VPPC.2008.4677544},
+}
+
+@Misc{can_protocol,
+  month   = {Oct},
+  title   = {Controller Area Network (can bus) protocol},
+  year    = {2021},
+  journal = {Kvaser},
+  url     = {https://www.kvaser.com/can-protocol-tutorial/},
+}
+
+@Misc{wikipedia_database,
+  month     = {Jan},
+  title     = {Database},
+  year      = {2022},
+  journal   = {Wikipedia},
+  publisher = {Wikimedia Foundation},
+  url       = {https://en.wikipedia.org/wiki/Database},
+}
+
+@Misc{timescale,
+  author  = {Timescale},
+  title   = {Time series benchmark suite},
+  journal = {GitHub},
+  url     = {https://github.com/timescale/tsbs#appendix-i-query-types-},
+}
+
+@Misc{geeksforgeeks_2020,
+  month   = {Apr},
+  title   = {Functional vs Non Functional Requirements},
+  year    = {2020},
+  journal = {GeeksforGeeks},
+  url     = {https://www.geeksforgeeks.org/functional-vs-non-functional-requirements/},
+}
+
+@Misc{benchmarking,
+  title   = {benchmarking},
+  journal = {Benchant.com},
+  url     = {https://benchant.com/blog/database-benchmarking},
+}
+
+@Misc{tsbs,
+  author  = {Timescale},
+  title   = {TSBS},
+  journal = {GitHub},
+  url     = {https://github.com/timescale/tsbs#appendix-i-query-types-},
+}
+
+@InProceedings{7507966,
+  author    = {Ramesh, Dharavath and Sinha, Ashay and Singh, Suraj},
+  booktitle = {2016 3rd International Conference on Recent Advances in Information Technology (RAIT)},
+  title     = {Data modelling for discrete time series data using Cassandra and MongoDB},
+  year      = {2016},
+  pages     = {598-601},
+  doi       = {10.1109/RAIT.2016.7507966},
+}
+
+@Misc{timestored.com,
+  title   = {Simple mysql time series SQL queries},
+  journal = {TimeStored.com},
+  url     = {http://www.timestored.com/time-series-data/mysql-time-series-sql},
+}
+
+@Misc{mergetree_clickhouse,
+  author    = {ClickHouse},
+  title     = {Replacingmergetree},
+  journal   = {ClickHouse Documentation},
+  publisher = {ClickHouse, Inc.},
+  url       = {https://clickhouse.com/docs/en/engines/table-engines/mergetree-family/replacingmergetree/},
+}
+
+@Misc{innodb,
+  month   = {Aug},
+  title   = {InnoDB Tablespace, segment and extent description page analysis and Disk Storage Space Management},
+  year    = {2021},
+  journal = {Develop Paper},
+  url     = {https://developpaper.com/innodb-tablespace-segment-and-extent-description-page-analysis-and-disk-storage-space-management/},
+}
+
+@Misc{mysql_innodb_parameter,
+  title   = {MySQL 5.7 Reference Manual :: 14.15 innodb startup options and system variables},
+  journal = {MySQL},
+  url     = {https://dev.mysql.com/doc/refman/5.7/en/innodb-parameters.html},
+}
+
+@Misc{mysql_page,
+  title   = {MySQL internals manual :: 22.2 innodb Page structure},
+  journal = {MySQL_Page},
+  url     = {https://dev.mysql.com/doc/internals/en/innodb-page-structure.html},
+}
+
+@Misc{compaction_cassandra,
+  title   = {Compaction},
+  journal = {Apache Cassandra},
+  url     = {https://cassandra.apache.org/doc/latest/cassandra/operating/compaction/index.html},
+}
+
+@Misc{cassandra_write,
+  title   = {How is data written in Cassandra?},
+  journal = {docs.datastax.com},
+  url     = {https://docs.datastax.com/en/cassandra-oss/3.0/cassandra/dml/dmlHowDataWritten.html},
+}
+
+@Misc{tikv,
+  title   = {B-Tree vs LSM-tree},
+  journal = {TiKV},
+  url     = {https://tikv.org/deep-dive/key-value-engine/b-tree-vs-lsm/#write-amplification},
+}
+
+@InProceedings{6495251,
+  author    = {Bhagat, Vandana and Gopal, Arpita},
+  booktitle = {2012 Fifth International Conference on Emerging Trends in Engineering and Technology},
+  title     = {Comparative Study of Row and Column Oriented Database},
+  year      = {2012},
+  pages     = {196-201},
+  doi       = {10.1109/ICETET.2012.56},
+}
+
+@Misc{wikipedia_rle,
+  month     = {Jan},
+  title     = {Run-length encoding},
+  year      = {2022},
+  journal   = {Wikipedia},
+  publisher = {Wikimedia Foundation},
+  url       = {https://en.wikipedia.org/wiki/Run-length_encoding},
+}
+
+@Misc{mongodb,
+  title   = {Schemaless Database},
+  journal = {MongoDB},
+  url     = {https://www.mongodb.com/unstructured-data/schemaless},
+}
+
+@Misc{rdd,
+  month   = {Mar},
+  title   = {Apache spark rdd tutorial},
+  year    = {2021},
+  journal = {Spark by {Examples}},
+  url     = {https://sparkbyexamples.com/spark-rdd-tutorial/},
+}
+
+@Article{10.1145/1365815.1365816,
+  author     = {Chang, Fay and Dean, Jeffrey and Ghemawat, Sanjay and Hsieh, Wilson C. and Wallach, Deborah A. and Burrows, Mike and Chandra, Tushar and Fikes, Andrew and Gruber, Robert E.},
+  journal    = {ACM Trans. Comput. Syst.},
+  title      = {Bigtable: A Distributed Storage System for Structured Data},
+  year       = {2008},
+  issn       = {0734-2071},
+  month      = {jun},
+  number     = {2},
+  volume     = {26},
+  abstract   = {Bigtable is a distributed storage system for managing structured data that is designed to scale to a very large size: petabytes of data across thousands of commodity servers. Many projects at Google store data in Bigtable, including web indexing, Google Earth, and Google Finance. These applications place very different demands on Bigtable, both in terms of data size (from URLs to web pages to satellite imagery) and latency requirements (from backend bulk processing to real-time data serving). Despite these varied demands, Bigtable has successfully provided a flexible, high-performance solution for all of these Google products. In this article, we describe the simple data model provided by Bigtable, which gives clients dynamic control over data layout and format, and we describe the design and implementation of Bigtable.},
+  address    = {New York, NY, USA},
+  articleno  = {4},
+  doi        = {10.1145/1365815.1365816},
+  issue_date = {June 2008},
+  keywords   = {Large-Scale Distributed Storage},
+  numpages   = {26},
+  publisher  = {Association for Computing Machinery},
+  url        = {https://doi.org/10.1145/1365815.1365816},
+}
+
+@ARTICLE{7857034,
+  author={Cheng, Dazhao and Zhou, Xiaobo and Lama, Palden and Wu, Jun and Jiang, Changjun},
+  journal={IEEE Transactions on Computers}, 
+  title={Cross-Platform Resource Scheduling for Spark and MapReduce on YARN}, 
+  year={2017},
+  volume={66},
+  number={8},
+  pages={1341-1353},
+  doi={10.1109/TC.2017.2669964}}
+  
+  
+@misc{scala_documentation, title={Introduction to Scala}, url={https://docs.scala-lang.org/overviews/collections-2.13/introduction.html}, journal={Scala Documentation}} 
+
+@misc{geeksforgeeks_2021, title={Introduction to scala}, url={https://www.geeksforgeeks.org/introduction-to-scala/}, journal={GeeksforGeeks}, year={2021}, month={Sep}} 
+  
+@misc{scala_python, title={Scala vs. python for apache spark}, url={https://www.projectpro.io/article/scala-vs-python-for-apache-spark/213}, journal={ProjectPro}} 
+
+@INPROCEEDINGS{9315863,
+  author={Gupta, Yogesh Kumar and Kumari, Surbhi},
+  booktitle={2020 3rd International Conference on Intelligent Sustainable Systems (ICISS)}, 
+  title={A Study of Big Data Analytics using Apache Spark with Python and Scala}, 
+  year={2020},
+  volume={},
+  number={},
+  pages={471-478},
+  doi={10.1109/ICISS49785.2020.9315863}}
+
+@Comment{jabref-meta: databaseType:bibtex;}
